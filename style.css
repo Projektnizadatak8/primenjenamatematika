@@ -1,0 +1,180 @@
+html, body {
+    font-family: arial;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(17, 65, 89);
+}
+
+body {
+    
+    flex-direction: column;
+}
+h3{
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+    background-color: rgb(5, 113, 137);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.content {
+    padding-top: 5vh;
+   padding-bottom: 5vh;
+    background-color: rgb(17, 65, 89);
+    
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgb(5, 113, 137);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.header-dugme{
+    text-decoration: none;
+    color: black;
+    
+}
+.header-dugme:hover{
+    color: rgba(0, 0, 0, 0.582);
+}
+.o-nama{
+    text-decoration: none;
+    color: black;
+}
+.o-nama:hover{
+    color: rgba(0, 0, 0, 0.582);
+
+}
+.zadatci{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.zadatak, .zadatak-2{
+    color: black;
+    text-decoration: none;
+   
+}
+.robot{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@media (max-width:1400px){
+    .zadatci{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .zadatak-2, .zadatak{
+      margin-left: 40px;
+      margin-top: 130px;
+    }
+    .zadatak-2{
+        margin-bottom: 150px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .formula-tekst{
+        font-size: 20px;
+    }
+}
+.video{
+    
+    width: 700px;
+}
+.objasnjenje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dugmiki{
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.kviz-dugmici{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.kviz-dugme, .zadatak-dugmici{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    background-color: rgb(5, 113, 137);
+    border: none;
+}
+.kviz-dugme:hover{
+    background-color: rgba(5, 113, 137, 0.582);
+    cursor: pointer;
+}
+.zadatak-dugmici:hover{
+    background-color: rgba(5, 113, 137, 0.582);
+    cursor: pointer;
+    
+}
+.zadatak-slike{
+    background: transparent;
+    width: 400px;
+}
+@media (max-width: 500px){
+    h3{
+        font-size: 30px;
+    }
+    .formula-tekst{
+        font-size: 30px;
+    }
+}
+.onama-slike{
+    display: inline-block;
+    width: 100px;
+     
+    animation-duration: 3s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
+}
+@keyframes spin{
+    0%{
+
+    }
+    50%{
+        transform: rotate(180deg);
+        width: 150px;
+    }
+    100%{
+        transform: rotate(360deg);
+        width: 100px;
+    }
+}
+.centriranje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
